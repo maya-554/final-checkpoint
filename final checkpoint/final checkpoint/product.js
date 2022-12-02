@@ -16,3 +16,9 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+function cclick() {
+    let x = document.getElementById("name").value;
+    let y = document.getElementById("email").value;
+  
+    alert("Hello " + x + " Welcome to the club");
+  }

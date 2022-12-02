@@ -1,0 +1,468 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Belleza", sans-serif;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  .first {
+    height: 100vh;
+    position: relative;
+    background-size: 100px;
+  }
+  a {
+    text-decoration: none;
+    color: #254e2c;
+    padding-inline: 50px;
+  }
+  a:hover {
+    color: #f47d6e;
+  }
+  .icon {
+    display: flex;
+  }
+  .partie {
+    position: relative;
+    height: 1200px;
+  }
+  .imgpro {
+    position: relative;
+  }
+  .partie > img {
+    position: absolute;
+    height: 1200px;
+    width: 100vw;
+  }
+  .partie .forme {
+    top: 300px;
+  }
+  /* verifier */
+  .partie h1 {
+    position: absolute;
+    font-size: 70px;
+    letter-spacing: 5px;
+    top: 20px;
+    left: 50px;
+  }
+  .imgpro img {
+    padding-inline: 70px;
+  }
+  .imgpro img:hover {
+   
+    animation: shake 0.7s;
+  
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .ingprobutton {
+    position: relative;
+    z-index: 100;
+    top: 250px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ingprobutton button {
+    width: 150px;
+    color: #254e2c;
+    border-radius: 10px;
+    border: #254e2c solid 2px;
+  }
+  .ingprobutton button:hover {
+    color: #f47d6e;
+    border: #f47d6e solid 2px;
+  }
+  .subscribe {
+    position: relative;
+    top: 450px;
+    left: 70px;
+  }
+  .subscribe h2 {
+    padding-bottom: 100px;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  @media (max-width: 400px){
+    .subscribe{
+      top: 600px;
+      left: 50px;
+    }
+    .subscribe h2{
+      padding-bottom: 20px;
+      font-size: 30px;
+    }
+    .subscribe h3 {
+      display: none;
+    
+    }
+  }
+  .partie .club img {
+    position: relative;
+    left: 700px;
+    height: 600px;
+    padding-top: 50px;
+  }
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 220px;
+    border: none;
+    border-bottom: #f47d6e dashed 2px;
+    outline: 0;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .button-74 {
+    background-color: #fbeee0;
+    border: 2px solid #3c8047;
+    border-radius: 30px;
+    box-shadow: #3c8047 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+  
+  ::placeholder {
+    color: #f47d6e;
+    font-family: "Belleza", sans-serif;
+    font-size: 18px;
+  }
+  .subscribe h3 {
+    letter-spacing: 10px;
+    line-height: 35px;
+    color: #254e2c;
+  }
+  .imgpro {
+    top: 200px;
+    display: flex;
+    height: 400px;
+  }
+  @media (max-width: 400px){
+    .imgpro {
+      flex-direction: column;
+      padding-inline: 20px;
+    }
+    .imgpro img{
+      height: 250px ;
+      width: 200px;
+      padding-bottom: 20px;
+    }
+    .ingprobutton{
+      flex-direction: column;
+      left: 100px;
+      
+    }
+    .product_button{
+     display: none;
+    }
+    .club{
+      display: none;
+    }
+    .first{
+    height: 200px;
+    position: relative;
+    
+    }
+    .menu_list{
+      display: none;
+    }
+  }
+
+  .pro {
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+  @media (max-width: 400px) {
+    .pro{
+      flex-direction: column-reverse;
+      padding-bottom: 10px;
+      padding-top: 200px;
+    }
+  
+   
+  }
+  .icon img {
+    height: 80px;
+    padding-inline: 45px;
+  }
+  
+  .ingredientsec {
+    margin-inline: 150px;
+  }
+  .ingredientsec p {
+    font-size: 20px;
+    padding-inline: 200px;
+  }
+  .ing {
+    padding-bottom: 30px;
+    font-size: 40px;
+    padding-inline: 180px;
+  }
+  .menu_list {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .textbig {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  .footer {
+    position: absolute;
+  }
+  .footer img {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+  }
+  .sub {
+    position: relative;
+    top: 550px;
+    left: 50px;
+  }
+  @media (max-width: 400px){
+    .sub{
+      top: 700px;
+      left: 70px;
+     
+    }
+    .forme{
+      height: auto;
+      top: 300px;
+    }
+    
+  }
+ 
+  .footer {
+    display: flex;
+    padding-top: 20px;
+    line-height: 40px;
+  }
+  .list1 ul {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-right: 40px;
+    list-style-type: none;
+  }
+  
+  .list1 {
+    padding-inline: 20px;
+  }
+  .sub p {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    color: #f47d6e;
+  }
+  .forme {
+    bottom: 0;
+  }
+  
+  .sub img {
+    width: 100vw;
+    top: 0;
+    height: 100px;
+  }
+  .for {
+    position: absolute;
+    top: 35%;
+    right: 13%;
+    font-size: 100px;
+  }
+  .you {
+    position: absolute;
+    color: #254e2c;
+    top: 55%;
+    left: 73%;
+    font-size: 200px;
+  }
+  .you:hover {
+    color: #f47d6e;
+  }
+  .imghead {
+    width: 100vw;
+    height: 600px;
+  }
+  @media (max-width: 400px){
+    .imghead{
+      height: auto;
+    }
+.you{
+  top: 100%;
+  left: 28%;
+  font-size: 100px;
+}
+.textbig {
+  position: absolute;
+  top: 63%;
+  right: 100px;
+  font-size: 50px;
+}
+.for {
+  position: absolute;
+  top:85%;
+  right: 45%;
+  font-size: 50px;
+}
+  }
+
+ 
+  h1 {
+    font-size: 100px;
+  }
+  nav {
+    width: 100vw;
+  }
+
+  
+  @media (max-width: 400px){
+
+    .footer .list1 {
+      line-height: 20px;
+    }
+    .list1 ul {
+      font-size: 15px;
+      padding-right: 5px;
+    }
+    .list1 {
+      padding-inline: 5px;
+      padding-top: 20px;
+    }
+    .sub p{
+      position: absolute;
+      top: 280px;
+      text-align: center;
+      color: #f47d6e;
+    }
+    .ing {
+      padding-inline: 40px;
+    }
+    .ingredientsec {
+      margin-inline: 50px;
+      padding-top: 30px;
+    }
+    .ingredientsec p {
+      font-size: 20px;
+      padding-inline: 65px;
+    }
+  
+   }
+   .carousel {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+   
+  }
+  
+  
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
+.menu_list{
+  z-index: 2;
+}
+

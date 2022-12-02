@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Belleza", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.first {
+  height: 100vh;
+  position: relative;
+  background-size: 100px;
+}
+a {
+  text-decoration: none;
+  color: #254e2c;
+  padding-inline: 50px;
+}
+a:hover {
+  color: #f47d6e;
+}
+.icon {
+  display: flex;
+}
+.partie {
+  position: relative;
+  height: 1200px;
+}
+.imgpro {
+  position: relative;
+}
+.partie > img {
+  position: absolute;
+  height: 1200px;
+  width: 100vw;
+}
+.partie .forme {
+  top: 300px;
+}
+.partie h1 {
+  position: absolute;
+  font-size: 70px;
+  letter-spacing: 5px;
+  top: 20px;
+  left: 50px;
+}
+.imgpro img {
+  padding-inline: 60px;
+}
+.ingprobutton {
+  position: relative;
+  z-index: 100;
+  top: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.ingprobutton button {
+  width: 150px;
+  color: #254e2c;
+  border-radius: 10px;
+  border: #254e2c solid 2px;
+}
+.ingprobutton button:hover {
+  color: #f47d6e;
+  border: #f47d6e solid 2px;
+}
+.subscribe {
+  position: relative;
+  top: 450px;
+  left: 70px;
+}
+.subscribe h2 {
+  padding-bottom: 100px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.partie .club img {
+  position: relative;
+  left: 700px;
+  height: 600px;
+  padding-top: 50px;
+}
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 220px;
+  border: none;
+  border-bottom: #f47d6e dashed 2px;
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #3c8047;
+  border-radius: 30px;
+  box-shadow: #3c8047 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+::placeholder {
+  color: #f47d6e;
+  font-family: "Belleza", sans-serif;
+  font-size: 18px;
+}
+.subscribe h3 {
+  letter-spacing: 10px;
+  line-height: 35px;
+  color: #254e2c;
+}
+.imgpro {
+  top: 200px;
+  display: flex;
+  height: 400px;
+}
+.pro {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.icon img {
+  height: 100px;
+  padding-inline: 40px;
+}
+
+.ingredientsec {
+  margin-inline: 50px;
+}
+.ingredientsec p {
+  font-size: 20px;
+  padding-inline: 200px;
+}
+.ing {
+  padding-bottom: 30px;
+  font-size: 40px;
+  padding-inline: 200px;
+}
+.menu_list {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.textbig {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+.footer {
+  position: absolute;
+}
+.footer img {
+  position: relative;
+  bottom: 0;
+  height: 100px;
+}
+.sub {
+  position: relative;
+  top: 550px;
+  left: 50px;
+}
+.footer {
+  display: flex;
+  padding-top: 20px;
+  line-height: 40px;
+}
+.list1 ul {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+  list-style-type: none;
+}
+
+.list1 {
+  padding-inline: 20px;
+}
+.sub p {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  color: #f47d6e;
+}
+.forme {
+  bottom: 0;
+}
+.sub img {
+  width: 100vw;
+  top: 0;
+  height: 100px;
+}
+.for {
+  position: absolute;
+  top: 35%;
+  right: 13%;
+  font-size: 100px;
+}
+.you {
+  position: absolute;
+  color: #254e2c;
+  top: 60%;
+  left: 70%;
+  font-size: 200px;
+}
+.you:hover {
+  color: #f47d6e;
+}
+.imghead {
+  width: 100vw;
+  height: 600px;
+}
+
+h1 {
+  font-size: 100px;
+}
+nav {
+  width: 100vw;
+}
+@media (max-width: 350px) {
+  nav {
+    width: 500px;
+  }
+}
